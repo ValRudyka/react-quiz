@@ -1,8 +1,8 @@
 # React quiz app
 
-In this app, you can check your knowledge of React basic concepts. The quiz is limited in time, therefore you have to
+In this app, people can check their knowledge of basic React concepts. The quiz is limited in time, therefore you have to
 
-answer on all the questions quickly and accurate. Let's start checking your understanding of React.
+answer on all the questions quickly and accurate.  
 
 # Getting Started with Create React App
 
