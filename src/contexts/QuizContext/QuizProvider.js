@@ -1,5 +1,6 @@
-import React, { createContext, useContext, useReducer, useEffect } from "react";
-import { reducer, initialState } from "../../reducers/QuizReducer";
+import React, { createContext, useContext, useReducer, useEffect } from 'react';
+import { reducer, initialState } from '../../reducers/QuizReducer';
+import { API_URL } from '../../constants';
 
 export const QuizContext = createContext();
 
@@ -39,11 +40,11 @@ export function QuizProvider({ children }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await fetch("http://localhost:8000/questions");
+        const res = await fetch(`${API_URL}/questions`);
         const data = await res.json();
-        dispatch({ type: "receivedData", payload: data });
+        dispatch({ type: 'receivedData', payload: data });
       } catch (error) {
-        dispatch({ type: "failedData" });
+        dispatch({ type: 'failedData' });
       }
     }
 
@@ -58,7 +59,7 @@ export const useQuiz = function () {
 
   if (context === undefined) {
     throw new Error(
-      "The context has been used outside of the QuizContext provider"
+      'The context has been used outside of the QuizContext provider'
     );
   }
 
