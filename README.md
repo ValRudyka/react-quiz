@@ -1,7 +1,7 @@
 # React quiz app
 
 In this app, people can check their knowledge of basic React concepts. The quiz is limited in time, therefore you have to answer on all the questions quickly and accurate. Uses fake api which is also
-deployed on Vercel(link: https://quiz-api-valrudyka.vercel.app/).
+deployed on Vercel(link: https://quiz-api-valrudyka.vercel.app/). Time for quizz
 
 # Getting Started with Create React App
 
